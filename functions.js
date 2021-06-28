@@ -6,6 +6,16 @@ const functions = {
   isNull: () => null,
 
   checkValue: x => x,
+
+  createUser: () => {
+    const user = {
+      firstName: 'Tyler',
+    };
+
+    user['lastName'] = 'Austin';
+
+    return user;
+  },
 };
 
 module.exports = functions;

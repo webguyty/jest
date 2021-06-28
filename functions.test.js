@@ -18,3 +18,18 @@ test('Should be null', () => {
 test('Should be falsy', () => {
   expect(functions.checkValue(null)).toBeFalsy();
 });
+
+// Checking objects and array
+test('User should be Tyler Austin Object', () => {
+  expect(functions.createUser()).toEqual({
+    firstName: 'Tyler',
+    lastName: 'Austin',
+  });
+});
+
+// Less than or greater
+test('Should be under 1600', () => {
+  const load1 = 800;
+  const load2 = 800;
+  expect(load1 + load2).toBeLessThanOrEqual(1600);
+});
